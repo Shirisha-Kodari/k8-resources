@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: labels
+  name: labels #filteration purpose we can labels 
   labels:
     project: roboshop
     component: redis
@@ -10,4 +10,8 @@ metadata:
 spec:
   containers:
   - name: nginx
-    image: nginx
+    image: nginx 
+    #labels are key value pairs this like meta data used as a selectors 
+    #and labels selected selecotrs internal resources and we can keep 63 char 
+    #labels pod connected to service using labels 
+    #identify the objects 

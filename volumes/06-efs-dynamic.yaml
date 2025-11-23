@@ -1,5 +1,5 @@
 apiVersion: v1
-kind: PersistentVolumeClaim
+kind: PersistentVolumeClaim #requested for storage 
 metadata:
   name: efs-dynamic
 spec:
@@ -23,7 +23,7 @@ spec:
     image: nginx   
     volumeMounts: # docker run -v host-path:container-path
     - name: persistent-storage
-      mountPath: /usr/share/nginx/html
+      mountPath: /usr/share/nginx/html #It will be mounted inside the container at the folder&Path inside the container where the volume is attached
   volumes:
   - name: persistent-storage
     persistentVolumeClaim:

@@ -5,15 +5,15 @@ metadata:
   labels: 
     purpose: service-demo
 spec:
-  selector:
+  selector: #selectors is a labels service which pod seletced based on lables 
     purpose: service-demo
     project: roboshop
     environment: dev
-  ports:
+  ports: 
     - protocol: TCP
       port: 80 # service port
       targetPort: 80 # container port
----
+--- 
 apiVersion: v1
 kind: Pod
 metadata:

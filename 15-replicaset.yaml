@@ -12,17 +12,17 @@ spec:
   # these are the labels replica set use to create  pod replicas, this should match pod labels
   selector:
      matchLabels:
-        purpose: rs-demo
-        project: roboshop
+        purpose: testing
+        project: personal
         app: nginx
-       # this is pod definition
+       # this is pod defiroboshopnition
   template:
     metadata:
        labels:
-         purpose: rs-demo
-         project: roboshop
-         app: nginx
+         purpose: testing
+         project: personal
+         app: frontend
     spec:
       containers:
       - name: nginx
-        image:  nginx:stable-perl
+        image:  nginx:stable-perl 

@@ -7,7 +7,7 @@ metadata:
      purpose: deployment-demo
      project: roboshop
      app: nginx
-spec:
+spec: 
   replicas: 2
   # these are the labels replica set use to create  pod replicas, this should match pod labels
   selector:
@@ -16,7 +16,7 @@ spec:
         project: roboshop
         app: nginx
        # this is pod definition
-  template:
+  template: 
     metadata:
        labels:
          purpose: deployment-demo

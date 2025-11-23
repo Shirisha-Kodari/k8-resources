@@ -2,11 +2,11 @@ kind: StorageClass
 apiVersion: storage.k8s.io/v1
 metadata:
   name: efs-roboshop
-provisioner: efs.csi.aws.com
-reclaimPolicy: Retain
+provisioner: efs.csi.aws.com #drivers talk to volumes ,k8 can not directly to talk storage system using drivers
+reclaimPolicy: Retain #if cluster deleted but data not deleted 
 parameters:
   provisioningMode: efs-ap
   fileSystemId: fs-0b53b5ca4cdca7047
   directoryPerms: "700"
   basePath: "/roboshp" # /roboshop/cart
-  
+  #storage class is resource in k8 and created pv automatically 
