@@ -20,7 +20,7 @@ spec:
     metadata:
        labels:
          purpose: deployment-demo
-         project: roboshopp
+         project: roboshop
          app: nginx
     spec:
       containers:
