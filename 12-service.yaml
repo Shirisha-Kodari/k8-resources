@@ -7,7 +7,7 @@ metadata:
 spec:
   selector: #selectors is a labels service which pod seletced based on lables 
     purpose: service-demo
-    project: roboshop
+    project: roboshopp
     environment: dev
   ports: 
     - protocol: TCP
