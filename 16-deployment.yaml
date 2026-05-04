@@ -20,7 +20,7 @@ spec:
     metadata:
        labels:
          purpose: deployment-demo
-         project: roboshop
+         project: roboshopp
          app: nginx
     spec:
       containers:
@@ -36,8 +36,8 @@ metadata:
 spec:
   selector:
     purpose: deployment-demo
-    project: roboshopp
-    app: nginx
+    project: roboshop
+    app: nginx 
   ports:
     - protocol: TCP
       port: 80 # service port
