@@ -16,4 +16,4 @@ spec:
     image: nginx
 
 #annotation is used storor keep external information/data not used for selectros 
-#this is key value pair used external resources we can be 256 char
+#this is key value pair used external resources we can be 256 char 
