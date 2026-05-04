@@ -10,7 +10,7 @@ metadata:
 spec:
   containers:
   - name: nginx
-    image: nginxx 
+    image: nginx 
     #labels are key value pairs this like meta data used as a selectors 
     #and labels selected selecotrs internal resources and we can keep 63 char 
     #labels pod connected to service using labels 
