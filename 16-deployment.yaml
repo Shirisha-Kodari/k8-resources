@@ -36,7 +36,7 @@ metadata:
 spec:
   selector:
     purpose: deployment-demo
-    project: roboshop
+    project: roboshopp
     app: nginx
   ports:
     - protocol: TCP
