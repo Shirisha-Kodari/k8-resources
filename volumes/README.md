@@ -21,6 +21,9 @@ create cluster
 -> pvc requesi for stoarge 
 ->pv repsernation of volume in k8 
 -> give volume name newly created voulme through manually 
+->create role and attcah to workernode 
+that role shloud have ebscsidriver policy 
+because it used for the volume attch to worketnode 
 
 * kubectl apply -k "github.com/kubernetes-sigs/aws-ebs-csi-driver/deploy/kubernetes/overlays/stable/?ref=release-1.62"
 
