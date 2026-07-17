@@ -17,7 +17,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: efs-static
+  name: efs-static  #pvc name 
 spec:
   accessModes:
     - ReadWriteOnce
@@ -41,7 +41,7 @@ spec:
     - name: persistent-storage
       mountPath: /usr/share/nginx/html
   volumes:
-  - name: persistent-storage
+  - name: persistent-storage   #the pod is connected to pod 
     persistentVolumeClaim:
       claimName: efs-static
 ---
