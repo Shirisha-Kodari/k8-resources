@@ -20,6 +20,7 @@ create cluster
 ->retain means if pod deleted eventhough date will be there 
 -> pvc requesi for stoarge 
 ->pv repsernation of volume in k8 
+-> give volume name newly created voulme through manually 
 
 * kubectl apply -k "github.com/kubernetes-sigs/aws-ebs-csi-driver/deploy/kubernetes/overlays/stable/?ref=release-1.62"
 
