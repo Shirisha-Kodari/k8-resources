@@ -34,7 +34,7 @@ metadata:
     project: roboshop
 spec:
   nodeSelector:
-    topology.kubernetes.io/zone: us-east-1c  #if your pod go to one specific node 
+    topology.kubernetes.io/zone: us-east-1d  #if your pod go to one specific node 
   containers:
   - name: nginx  
     image: nginx   
