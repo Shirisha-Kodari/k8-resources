@@ -40,3 +40,23 @@ login to nginx conatiner and -> cd /usr/share/nginx/html->echo "<h1> hi iam from
 steps:
 create storage class 
 sc creates the disk and pv , so no need create disk and pv
+add permisriion ebscsidriver to node 
+
+# EFS Static: 
+
+kubectl kustomize \
+    "github.com/kubernetes-sigs/aws-efs-csi-driver/deploy/kubernetes/overlays/stable/ecr/?ref=release-2.1" > private-ecr-driver.yaml
+    -> vim private-ecr-driver.yaml
+    -> kubectl apply private-ecr-driver.yaml 
+    ->go to node and then click security ->iam role click on that ->add permission->efscsidriver policy 
+    here create nfs and eksctl create own vpc and sg 
+    -> here created one sg we allow the source node sg and open the port nfs 2049 form ec2 sg 
+    ->create pv,pvc and mount to pod 
+
+# reasons:
+check drivers installed or not 
+check permsiion whether policy attch to node or not 
+pvc bound to pv or not 
+volume and node in the same az 
+each project has own file syatem we can create file sytem for each service like cart,user 
+and here created access points 
