@@ -4,7 +4,7 @@ metadata:
   name: nginx #pod name 
   labels: 
     purpose: demo #key value pair     
-spec:
+spec: 
  containers: 
  - name: nginx 
    image: nginx 
