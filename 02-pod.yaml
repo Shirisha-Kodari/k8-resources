@@ -3,7 +3,7 @@ kind: Pod #resource type
 metadata: 
   name: nginx #pod name 
   labels:
-    purpose: demo #key value pair    
+    purpose: demo #key value pair     
 spec:
  containers: 
  - name: nginx 
