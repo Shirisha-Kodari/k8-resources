@@ -3,5 +3,5 @@ kind: Namespace #resource type
 metadata: 
   name: roboshop
   labels:
-    project: roboshop 
+    project: roboshop  
     environment: dev 
