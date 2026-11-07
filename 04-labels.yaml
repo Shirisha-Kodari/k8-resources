@@ -3,7 +3,7 @@ kind: Pod
 metadata: 
   name: labels #filteration purpose we can labels      
   labels:
-    project: roboshop
+    project: roboshop 
     component: redis
     tier: backend 
     environment: dev 
