@@ -5,7 +5,7 @@ metadata:
   labels:
     project: roboshop
     component: redis
-    tier: backend
+    tier: backend 
     environment: dev 
 spec:
   containers:
