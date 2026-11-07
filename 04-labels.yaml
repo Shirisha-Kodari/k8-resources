@@ -4,7 +4,7 @@ metadata:
   name: labels #filteration purpose we can labels         
   labels:  
     project: roboshop 
-    component: redis
+    component: redis 
     tier: backend 
     environment: dev     
 spec:
