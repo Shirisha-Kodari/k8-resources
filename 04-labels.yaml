@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: labels #filteration purpose we can labels     
+  name: labels #filteration purpose we can labels      
   labels:
     project: roboshop
     component: redis
