@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Pod
 metadata: 
   name: labels #filteration purpose we can labels      
-  labels:
+  labels: 
     project: roboshop 
     component: redis
     tier: backend 
